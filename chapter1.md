@@ -24,11 +24,11 @@ Have a look at the plot. Which color does the point with the lowest rating have?
 # The pre exercise code runs code to initialize the user's workspace.
 # You can use it to load packages, initialize datasets and draw a plot in the viewer
 
-movies <- read.csv("http://s3.amazonaws.com/assets.datacamp.com/course/introduction_to_r/movies.csv")
+books <- read.csv("http://s3.amazonaws.com/assets.datacamp.com/course/introduction_to_r/books.csv")
 
 library(ggplot2)
 
-ggplot(movies, aes(x = runtime, y = rating, col = genre)) + geom_point()
+ggplot(books, aes(x = runtime, y = rating, col = genre)) + geom_point()
 ```
 
 *** =sct
@@ -43,14 +43,14 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 --- type:NormalExercise lang:r xp:100 skills:1 key:a720588156
 ## More books 
 
-In the previous exercise, you saw a dataset about movies. In this exercise, we'll have a look at yet another dataset about movies!
+In the previous exercise, you saw a dataset about books. In this exercise, we'll have a look at yet another dataset about books!
 
-A dataset with a selection of movies, `movie_selection`, is available in the workspace.
+A dataset with a selection of books, `movie_selection`, is available in the workspace.
 
 *** =instructions
 - Check out the structure of `movie_selection`.
-- Select movies with a rating of 5 or higher. Assign the result to `good_movies`.
-- Use `plot()` to  plot `good_movies$Run` on the x-axis, `good_movies$Rating` on the y-axis and set `col` to `good_movies$Genre`.
+- Select books with a rating of 5 or higher. Assign the result to `good_books`.
+- Use `plot()` to  plot `good_books$Run` on the x-axis, `good_books$Rating` on the y-axis and set `col` to `good_books$Genre`.
 
 *** =hint
 - Use `str()` for the first instruction.
@@ -76,3 +76,9 @@ A dataset with a selection of movies, `movie_selection`, is available in the wor
 ```{r}
 
 ```
+
+--- type:VideoExercise lang:r xp:50 skills:1 key:20047b0836
+## Welcome to the course
+
+*** =slidesKey
+80c74ba03f98aa57ae3ef1a406aafd64
