@@ -41,7 +41,7 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:a720588156
-## More books 
+## More movies 
 
 In the previous exercise, you saw a dataset about books. In this exercise, we'll have a look at yet another dataset about books!
 
@@ -56,10 +56,11 @@ A dataset with a selection of books, `movie_selection`, is available in the work
 - Use `str()` for the first instruction.
 - For the second instruction, you should use `...[movie_selection$Rating >= 5, ]`.
 - For the plot, use `plot(x = ..., y = ..., col = ...)`.
+- Hint
 
 *** =pre_exercise_code
 ```{r}
-
+# something new
 ```
 
 *** =sample_code
