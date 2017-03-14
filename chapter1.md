@@ -61,11 +61,12 @@ A dataset with a selection of books, `movie_selection`, is available in the work
 *** =pre_exercise_code
 ```{r}
 # something new
+test <- read.csv("http://s3.amazonaws.com/assets.datacamp.com/production/course_3405/datasets/test.csv")
 ```
 
 *** =sample_code
 ```{r}
-
+test
 ```
 
 *** =solution
@@ -83,3 +84,37 @@ A dataset with a selection of books, `movie_selection`, is available in the work
 
 *** =slidesKey
 80c74ba03f98aa57ae3ef1a406aafd64
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:21dd1a6850
+## Test
+
+
+*** =instructions
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sample_code
+```{r}
+
+```
+
+*** =solution
+```{r}
+
+```
+
+*** =sct
+```{r}
+
+```
+
+--- type:VideoExercise lang:r xp:50 skills:1 key:25b4a8c306
+## Some video
+
+*** =slidesKey
+b29a586c97c6f4b59533eefe5c15f50f
