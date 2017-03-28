@@ -163,5 +163,6 @@ Ex().check_result()
 ```
 
 *** =key3
-f4b7465ve8467
+c7cd15d2af
+
 *** =xp3: 50
