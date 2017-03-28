@@ -1,120 +1,159 @@
 ---
-title       : Insert the chapter title here
-description : Insert the chapter description here
-attachments :
-  slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
+title       : Testing subexercises
+description : This thing is meant to test subexercises
 
---- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:c60aa91c13
-## A really bad movie
+--- type:TabExercise key:ed98f7522c
+## TabExercise
 
-Have a look at the plot that showed up in the viewer to the right. Which type of movie has the worst rating assigned to it?
-
-*** =instructions
-- Adventure
-- Action
-- Animation
-- Comedy
-- Horror
-
-*** =hint
-Have a look at the plot. Which color does the point with the lowest rating have?
+This is a tabexercise. ASF
+XP should be defined at subexercise level.
 
 *** =pre_exercise_code
-```{r}
-# The pre exercise code runs code to initialize the user's workspace.
-# You can use it to load packages, initialize datasets and draw a plot in the viewer
-
-books <- read.csv("http://s3.amazonaws.com/assets.datacamp.com/course/introduction_to_r/books.csv")
-
-library(ggplot2)
-
-ggplot(books, aes(x = runtime, y = rating, col = genre)) + geom_point()
-```
-
-*** =sct
-```{r}
-# SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
-
-msg_bad <- "That is not correct!"
-msg_success <- "Exactly! There seems to be a very bad action movie in the dataset."
-test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
-```
-
---- type:NormalExercise lang:r xp:100 skills:1 key:a720588156
-## More movies 
-
-In the previous exercise, you saw a dataset about books. In this exercise, we'll have a look at yet another dataset about books!
-
-A dataset with a selection of books, `movie_selection`, is available in the workspace.
-
-*** =instructions
-- Check out the structure of `movie_selection`.
-- Select books with a rating of 5 or higher. Assign the result to `good_books`.
-- Use `plot()` to  plot `good_books$Run` on the x-axis, `good_books$Rating` on the y-axis and set `col` to `good_books$Genre`.
-
-*** =hint
-- Use `str()` for the first instruction.
-- For the second instruction, you should use `...[movie_selection$Rating >= 5, ]`.
-- For the plot, use `plot(x = ..., y = ..., col = ...)`.
-- Hint
-
-*** =pre_exercise_code
-```{r}
-# something new
-test <- read.csv("http://s3.amazonaws.com/assets.datacamp.com/production/course_3405/datasets/test.csv")
+```{python}
+connect('postgresql', 'dvdrental')
 ```
 
 *** =sample_code
-```{r}
-test
+```{sql}
+-- sql code comes here
 ```
 
-*** =solution
-```{r}
+*** =type1: NormalExercise
+*** =key1: e7cd8d45cb0
+*** =xp1:50
+*** =instructions1
+Do some stuff
 
+*** =solution1
+```{sql}
+SELECT film_id, title FROM film;
 ```
 
-*** =sct
-```{r}
-
+*** =sct1
+```{python}
+Ex().check_result()
 ```
 
---- type:VideoExercise lang:r xp:50 skills:1 key:20047b0836
-## Welcome to the course
+*** =type2: MultipleChoiceExercise
+*** =key2: 216ce6d2106
+*** =xp2:50
+*** =question2
+What do you think?
 
-*** =slidesKey
-80c74ba03f98aa57ae3ef1a406aafd64
+*** =possible_answers2
+- One
+- Two
+- Three
+- Four
 
---- type:NormalExercise lang:r xp:100 skills:1 key:21dd1a6850
-## Test
+*** =sct2
+```{python}
+msg1 = "Wrong 1"
+msg2 = "Option 2 is correct, great!"
+msg3 = "Wrong 2"
+msg4 = "Wrong 3"
+Ex().test_mc(2,[msg1,msg2,msg3,msg4])
+```
+
+*** =type3: NormalExercise
+
+*** =key3: f643f41db4
+*** =xp3:50
+*** =instructions3: Do some stuff part 3.
+*** =solution3
+```{sql}
+SELECT film_id, title FROM film
+```
+
+*** =sct3
+```{python}
+Ex().check_result()
+```
+
+*** =type4: NormalExercise
+*** =key4: 2805953617
+*** =xp4:50
+*** =instructions4: Do some stuff part 4.
+*** =solution4
+```{sql}
+SELECT film_id, title FROM film
+```
+
+*** =sct4
+```{python}
+Ex().check_result()
+```
+
+*** =type5: NormalExercise
+*** =key5: b78ff98e7e
+*** =xp5:50
+*** =instructions5: Do some stuff part 4.
+*** =solution5
+```{sql}
+SELECT film_id, title FROM film
+```
+
+*** =sct5
+```{python}
+Ex().check_result()
+```
 
 
-*** =instructions
+--- type:BulletExercise key:ac8d4e05c2
+## BulletExercise
 
-*** =hint
+This is a bullet exercise.
+XP should be defined at subexercise level.
 
 *** =pre_exercise_code
-```{r}
-
+```{python}
+connect('postgresql', 'dvdrental')
 ```
 
 *** =sample_code
-```{r}
-
+```{python}
+-- sql code comes here.
 ```
 
-*** =solution
-```{r}
-
+*** =type1: NormalExercise
+*** =key1: f4b7465ve8467
+*** =xp1: 50
+*** =instructions1: Do some stuff
+*** =solution1
+```{sql}
+SELECT film_id, title FROM film;
 ```
 
-*** =sct
-```{r}
-
+*** =sct1
+```{python}
+Ex().check_result()
 ```
 
---- type:VideoExercise lang:r xp:50 skills:1 key:25b4a8c306
-## Some video
+*** =type2: NormalExercise
+*** =key2: fd34f3517f35
+*** =xp2: 50
+*** =instructions2: Do some stuff part 2.
+*** =solution2
+```{sql}
+SELECT film_id, title FROM film
+```
 
-*** =slidesKey
-b29a586c97c6f4b59533eefe5c15f50f
+*** =sct2
+```{python}
+Ex().check_result()
+```
+
+
+*** =type3: NormalExercise
+
+*** =xp3: 50
+*** =instructions3: Do some stuff part 3.
+*** =solution3
+```{sql}
+SELECT film_id, title FROM film
+```
+
+*** =sct3
+```{python}
+Ex().check_result()
+```
