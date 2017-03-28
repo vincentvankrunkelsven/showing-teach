@@ -146,6 +146,8 @@ Ex().check_result()
 
 *** =type3: NormalExercise
 
+*** =key3: 7fa2f49b03
+
 *** =xp3: 50
 *** =instructions3: Do some stuff part 3.
 *** =solution3
