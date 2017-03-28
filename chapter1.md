@@ -149,7 +149,6 @@ Ex().check_result()
 
 
 *** =type3: NormalExercise
-*** =key3: 34e897cd80
 
 *** =xp3: 50
 *** =instructions3: Do some stuff part 3.
@@ -162,3 +161,7 @@ SELECT film_id, title FROM film
 ```{python}
 Ex().check_result()
 ```
+
+*** =key3
+f4b7465ve8467
+*** =xp3: 50
