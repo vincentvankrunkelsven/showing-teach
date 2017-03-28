@@ -132,6 +132,8 @@ Ex().check_result()
 *** =type2: NormalExercise
 
 
+*** =key2: b376541a47
+
 *** =xp2: 50
 
 *** =instructions2: Do some stuff part 2.
@@ -148,6 +150,8 @@ Ex().check_result()
 
 *** =type3: NormalExercise
 *** =key1: f4b7465ve8467
+*** =key3: 6381338a36
+
 *** =xp3: 50
 *** =instructions3: Do some stuff part 3.
 *** =solution3
