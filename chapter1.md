@@ -149,8 +149,7 @@ Ex().check_result()
 
 
 *** =type3: NormalExercise
-*** =key1: f4b7465ve8467
-*** =key3: 6381338a36
+*** =key3: f4b7465ve8467
 
 *** =xp3: 50
 *** =instructions3: Do some stuff part 3.
