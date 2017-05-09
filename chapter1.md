@@ -166,3 +166,8 @@ Ex().check_result()
 c7cd15d2af
 
 *** =xp3: 50
+--- type:VideoExercise lang:r xp:50 skills:1 key:b3c1f80289
+## Test
+
+*** =projector_key
+27c529a4d5d3a799594498f0eeb4a52c
